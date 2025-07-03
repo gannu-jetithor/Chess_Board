@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: #ccc;
+        font-family:"Roboto condensed",sans-serif;
+    }
+    ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+        margin: 0 5px;
+    }
+    ul li a.fa {
+        font-size: 40px;
+        color: #262626;
+        line-height: 80px;
+        transition: 0.5s;
+        padding-right: 14px;
+    }
+    ul li a span {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 30px;
+        color: #262626;
+        letter-spacing: 4px;
+        transition: 0.5s;
+    }
+    ul li a {
+        text-decoration: none;
+        display: absolute;
+        display: block;
+        width: 210px;
+        height: 80px;
+        background: #fff;
+        text-align: left;
+        padding-left: 20px;
+        transform: rotate(-30deg) skew(25deg)
+        translate(0, 0);
+        transition: 0.5s;
+        box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    }
+    ul li a:before {
+        content:"";
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+        background: #b1b1b1;
+        transform: 0.5s;
+        transform: rotate(0deg) skew(-45deg);
+    }
+
+</style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>first</th>
-            <th>middle</th>
-            <th>last</th>
-        </tr>
-    </table>
+    <ul>
+        <li><a href="https://www.instagram.com/">@ instagram</a></li>
+        <li><a href="https://www.facebook.com/">facebook</a></li>
+        <li><a href="https://www.google.com/">google</a></li>
+        <li><a href="https://x.com/?lang=en">twitter</a></li>
+    </ul>
 </body>
 </html>
